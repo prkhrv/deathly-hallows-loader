@@ -1,0 +1,197 @@
+@font-face{
+  font-family: f1;
+  src:url('fonts/f1.ttf');
+}
+
+
+body{
+  background-color: black;
+}
+
+
+
+.wrapper {
+  position: relative;
+  margin: 40px auto;
+  background: black;
+}
+
+.wrapper, .wrapper * {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+.wrapper {
+  width: 150px;
+  height: 150px;
+  margin-top: 200px;
+}
+
+.wrapper .pie {
+  width: 50%;
+  height: 100%;
+  transform-origin: 100% 50%;
+  position: absolute;
+  background: transparent;
+  border: 5px solid white;
+}
+
+.wrapper .spinner {
+  border-radius: 100% 0 0 100% / 50% 0 0 50%;
+  z-index: 200;
+  border-right: none;
+  animation: rota 2s linear infinite;
+}
+
+.wrapper:hover .spinner,
+.wrapper:hover .filler,
+.wrapper:hover .mask {
+  animation-play-state: running;
+}
+
+.wrapper .filler {
+  border-radius: 0 100% 100% 0 / 0 50% 50% 0;
+  left: 50%;
+  opacity: 0;
+  z-index: 100;
+  animation: opa 2s steps(1, end) infinite reverse;
+  border-left: none;
+}
+
+.wrapper .mask {
+  width: 50%;
+  height: 100%;
+  position: absolute;
+  background: transparent;
+  opacity: 1;
+  z-index: 300;
+}
+
+@keyframes rota {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+@keyframes opa {
+  0% {
+    opacity: 1;
+  }
+  50%, 100% {
+    opacity: 0;
+  }
+}
+
+
+.wand{
+  height: 220px;
+  width: 4px;
+  background-color: white;
+  position: absolute;
+  left: 683px;
+  top: 129px;
+  border-radius: 8px;
+  animation: abc 1s linear infinite;
+}
+
+
+.t1{
+  height: 256px;
+  width: 4px;
+  background-color: white;
+  border-radius: 8px;
+  position: absolute;
+  left: 616px;
+  top: 111px;
+  transform: rotate(31deg);
+  animation: abc 1.5s linear infinite;
+}
+
+
+.t2{
+  height: 4px;
+  width: 263px;
+  background-color: white;
+  border-radius: 8px;
+  position: absolute;
+  left: 554px;
+  top: 346px;
+  animation: abc 2.5s linear infinite;
+}
+
+.t3{
+  height: 256px;
+  width: 4px;
+  background-color: white;
+  border-radius: 8px;
+  position: absolute;
+  left: 749px;
+  top: 111px;
+  transform: rotate(-31deg);
+  animation: abc 2s linear infinite;
+}
+
+
+@keyframes abc{
+
+  0% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0;
+  }
+
+}
+
+
+.text{
+  font-family: f1;
+  color: white;
+  position: absolute;
+  left: 600px;
+  top: 350px;
+  animation: abc1 10s linear infinite;
+}
+
+@keyframes abc1{
+
+  0% {
+    opacity: 0;
+  }
+
+  10%{
+    opacity: 0;
+  }
+  20%{
+    opacity: 0;
+  }
+  30%{
+    opacity: 0;
+  }
+  90% {
+    opacity: 1;
+  }
+
+}
+
+
+.animate-bottom {
+  position: relative;
+  -webkit-animation-name: animatebottom;
+  -webkit-animation-duration: 1s;
+  animation-name: animatebottom;
+  animation-duration: 1s
+}
+
+@-webkit-keyframes animatebottom {
+  from { bottom:-100px; opacity:0 } 
+  to { bottom:0px; opacity:1 }
+}
+
+@keyframes animatebottom { 
+  from{ bottom:-100px; opacity:0 } 
+  to{ bottom:0; opacity:1 }
+}
