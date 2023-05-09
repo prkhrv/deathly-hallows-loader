@@ -8,6 +8,14 @@ body{
   background-color: black;
 }
 
+#loader{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 300px;
+  height: 200px;
+}
+
 
 
 .wrapper {
@@ -25,8 +33,8 @@ body{
 .wrapper {
   width: 150px;
   height: 150px;
-  margin-left: 610px;
-  margin-top: 200px;
+  margin-left: 70px;
+  margin-top: 85px;
 }
 
 .wrapper .pie {
@@ -92,8 +100,8 @@ body{
   width: 4px;
   background-color: white;
   position: absolute;
-  left: 683px;
-  top: 129px;
+  left: 140px;
+  top: 20px;
   border-radius: 8px;
   animation: abc 1s linear infinite;
 }
@@ -105,8 +113,8 @@ body{
   background-color: white;
   border-radius: 8px;
   position: absolute;
-  left: 616px;
-  top: 111px;
+  left: 75px;
+  top: 0px;
   transform: rotate(31deg);
   animation: abc 1.5s linear infinite;
 }
@@ -118,8 +126,8 @@ body{
   background-color: white;
   border-radius: 8px;
   position: absolute;
-  left: 554px;
-  top: 346px;
+  left: 10px;
+  top: 235px;
   animation: abc 2.5s linear infinite;
 }
 
@@ -129,8 +137,8 @@ body{
   background-color: white;
   border-radius: 8px;
   position: absolute;
-  left: 749px;
-  top: 111px;
+  left: 208px;
+  top: 0px;
   transform: rotate(-31deg);
   animation: abc 2s linear infinite;
 }
@@ -152,8 +160,8 @@ body{
   font-family: f1;
   color: white;
   position: absolute;
-  left: 600px;
-  top: 350px;
+  left: 70px;
+  top: 240px;
   animation: abc1 10s linear infinite;
 }
 
@@ -170,7 +178,7 @@ body{
     opacity: 0;
   }
   30%{
-    opacity: 0;
+    opacity: 0.5;
   }
   90% {
     opacity: 1;
