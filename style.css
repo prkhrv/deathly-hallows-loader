@@ -11,7 +11,7 @@ body{
 
 
 .wrapper {
-  position: relative;
+  position: absolute;
   margin: 40px auto;
   background: black;
 }
@@ -25,6 +25,7 @@ body{
 .wrapper {
   width: 150px;
   height: 150px;
+  margin-left: 610px;
   margin-top: 200px;
 }
 
